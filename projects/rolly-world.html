@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rolly World | Sufyaan Albertus</title>
+  <meta name="description" content="Rolly World: a Unity 3D platformer. Sufyaan Albertus was Technical Lead.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23000'/%3E%3Ctext x='16' y='22' font-size='16' text-anchor='middle' fill='%23E8C65F' font-family='sans-serif' font-weight='900'%3ES%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Exo+2:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="../index.html" aria-label="Sufyaan Albertus, home">S//A</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">MENU</button>
+    <nav class="nav" id="nav">
+      <a href="../index.html#work">← ALL WORK</a>
+      <a href="../index.html#contact">CONTACT</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- a. Poster + b. Synopsis + g/h. Links -->
+  <section class="p-hero">
+    <div class="wrap">
+      <div class="poster">
+        <!-- a. Replace with your poster: <img src="../assets/rolly-world/poster.webp" alt="Rolly World poster"> -->
+        <div class="label" style="color:var(--gold-1);font-size:0.7rem">A // POSTER</div>
+        <div>
+          <div class="poster-title">ROLLY<br>WORLD</div>
+          <div class="poster-credits">SUFYAAN ALBERTUS · [MEMBER 2]<br>[MEMBER 3] · [MEMBER 4]</div>
+        </div>
+      </div>
+      <div class="p-intro">
+        <span class="label">Project 01 // 3D platformer // 2026</span>
+        <h1 class="gold-text">ROLLY WORLD</h1>
+        <div class="synopsis">
+          <span class="label" style="color:var(--text-3);font-size:0.7rem">B // Synopsis</span>
+          <p>Roll through three worlds, outlast a patrolling boss that gets angrier the longer you survive, and reach the exit before your lives run out.</p>
+        </div>
+        <div class="links">
+          <a class="link-tile primary" href="#video"><span class="label" style="font-size:0.7rem">G // Demo video</span><b>Watch gameplay ▶</b></a>
+          <a class="link-tile secondary" href="https://YOUR-USERNAME.itch.io/rolly-world" target="_blank" rel="noopener"><span class="label" style="font-size:0.7rem">H // Download</span><b>Play on itch.io ↓</b></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- c. Brief, d. Role, e. Tech -->
+  <section class="section">
+    <div class="wrap">
+      <div class="info-grid">
+        <div>
+          <span class="label" style="font-size:0.7rem">C // The brief</span>
+          <p>Module XBCGD7311. Build a 3D game in Unity with at least three scenes, a full menu flow, and data structures driving real gameplay systems. [Add team size and timeframe.]</p>
+        </div>
+        <div>
+          <span class="label" style="font-size:0.7rem">D // My role: Technical Lead</span>
+          <p>I set up the project, kept the codebase organised and wrote 20+ C# scripts covering the boss AI, audio, loading, menus and respawning.</p>
+        </div>
+        <div>
+          <span class="label" style="font-size:0.7rem">E // Tech stack</span>
+          <ul class="chips"><li>UNITY</li><li>C#</li><li>VISUAL STUDIO</li><li>GITHUB</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head"><span class="label">What I built</span></div>
+      <ul class="built">
+        <li>Boss patrol on a Graph ADT of waypoints</li>
+        <li>Boss rage mechanic that ramps over time</li>
+        <li>HashMap-based SFX manager</li>
+        <li>Async loading screen</li>
+        <li>Level chooser UI</li>
+        <li>Respawn system</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- g. Demo video -->
+  <section class="section" id="video">
+    <div class="wrap">
+      <div class="section-head"><span class="label">G // Gameplay</span></div>
+      <div class="video">
+        <!-- Replace VIDEO_ID with your YouTube video ID, then delete the placeholder div -->
+        <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Rolly World gameplay" allowfullscreen loading="lazy"></iframe> -->
+        <div class="video-placeholder">[ Paste your YouTube embed here ]</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- f. Process -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head"><span class="label">F // Process</span></div>
+      <h2 style="margin-bottom:22px">From graybox to boss fight</h2>
+      <div class="process">
+        <figure><div class="shot">[LEVEL SKETCH]</div><figcaption><b>01</b>Paper level maps</figcaption></figure>
+        <figure><div class="shot">[GRAYBOX]</div><figcaption><b>02</b>Graybox in Unity</figcaption></figure>
+        <figure><div class="shot">[PATROL GIZMOS]</div><figcaption><b>03</b>Boss patrol graph</figcaption></figure>
+        <figure><div class="shot">[FINAL BUILD]</div><figcaption><b>04</b>Final polish</figcaption></figure>
+      </div>
+<pre class="code"><span class="c">// BossPatrol.cs: pick the next node on the patrol graph</span>
+Waypoint next = patrolGraph.GetNeighbours(current)
+                           .OrderBy(w =&gt; Random.value).First();
+agent.SetDestination(next.position);</pre>
+      <div class="pager">
+        <a href="../index.html#work">← ALL WORK</a>
+        <a href="whisper-village.html">NEXT: WHISPER VILLAGE →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="wrap">
+    <div class="footer-cta">LET'S BUILD<br><span>SOMETHING.</span></div>
+    <a href="mailto:sufyaan.albertus040@gmail.com">sufyaan.albertus040@gmail.com</a>
+    <p class="copyright">© <span id="year">2026</span> Sufyaan Albertus</p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

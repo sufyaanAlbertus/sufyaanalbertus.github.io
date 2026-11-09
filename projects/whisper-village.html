@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Whisper Village | Sufyaan Albertus</title>
+  <meta name="description" content="Whisper Village: a 2D RPG with LLM-powered NPC dialogue, built in Unity.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23000'/%3E%3Ctext x='16' y='22' font-size='16' text-anchor='middle' fill='%23E8C65F' font-family='sans-serif' font-weight='900'%3ES%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Exo+2:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="../index.html" aria-label="Sufyaan Albertus, home">S//A</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">MENU</button>
+    <nav class="nav" id="nav">
+      <a href="../index.html#work">← ALL WORK</a>
+      <a href="../index.html#contact">CONTACT</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- a. Poster + b. Synopsis + g/h. Links -->
+  <section class="p-hero">
+    <div class="wrap">
+      <div class="poster">
+        <!-- a. Replace with your poster: <img src="../assets/whisper-village/poster.webp" alt="Whisper Village poster"> -->
+        <div class="label" style="color:var(--gold-1);font-size:0.7rem">A // POSTER</div>
+        <div>
+          <div class="poster-title">WHISPER<br>VILLAGE</div>
+          <div class="poster-credits">SUFYAAN ALBERTUS · [MEMBER 2]<br>[MEMBER 3] · [MEMBER 4]</div>
+        </div>
+      </div>
+      <div class="p-intro">
+        <span class="label">Project 02 // 2D RPG // 2026</span>
+        <h1 class="gold-text">WHISPER VILLAGE</h1>
+        <div class="synopsis">
+          <span class="label" style="color:var(--text-3);font-size:0.7rem">B // Synopsis</span>
+          <p>A top-down RPG where villagers answer you in real time, powered by a local language model, across a four-character, three-act story.</p>
+        </div>
+        <div class="links">
+          <a class="link-tile primary" href="#video"><span class="label" style="font-size:0.7rem">G // Demo video</span><b>Watch gameplay ▶</b></a>
+          <a class="link-tile secondary" href="https://YOUR-USERNAME.itch.io/whisper-village" target="_blank" rel="noopener"><span class="label" style="font-size:0.7rem">H // Download</span><b>Play on itch.io ↓</b></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- c. Brief, d. Role, e. Tech -->
+  <section class="section">
+    <div class="wrap">
+      <div class="info-grid">
+        <div>
+          <span class="label" style="font-size:0.7rem">C // The brief</span>
+          <p>Game Design 3A (XBCGD7311). Build a 2D game in Unity that pushes NPC interaction further than scripted dialogue trees. [Add team size and timeframe.]</p>
+        </div>
+        <div>
+          <span class="label" style="font-size:0.7rem">D // My role: AI &amp; systems</span>
+          <p>I rebuilt the language-model integration for speed, redesigned the dialogue UI, rewrote the enemy AI and structured the NPC story, then wrote the final documentation.</p>
+        </div>
+        <div>
+          <span class="label" style="font-size:0.7rem">E // Tech stack</span>
+          <ul class="chips"><li>UNITY</li><li>C#</li><li>OLLAMA</li><li>QWEN2.5:3B</li><li>PIXEL ART</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head"><span class="label">What I built</span></div>
+      <ul class="built">
+        <li>Faster Ollama integration with streaming</li>
+        <li>Token capping for quick replies</li>
+        <li>Three-panel visual-novel dialogue UI</li>
+        <li>Typewriter reveal + portrait animation</li>
+        <li>Slime enemy AI as a state machine</li>
+        <li>Four-character, three-act NPC narrative</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- g. Demo video -->
+  <section class="section" id="video">
+    <div class="wrap">
+      <div class="section-head"><span class="label">G // Gameplay</span></div>
+      <div class="video">
+        <!-- Replace VIDEO_ID with your YouTube video ID, then delete the placeholder div -->
+        <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Whisper Village gameplay" allowfullscreen loading="lazy"></iframe> -->
+        <div class="video-placeholder">[ Paste your YouTube embed here ]</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- f. Process -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head"><span class="label">F // Process</span></div>
+      <h2 style="margin-bottom:22px">Making villagers talk back</h2>
+      <div class="process">
+        <figure><div class="shot">[DIALOGUE UI V1]</div><figcaption><b>01</b>First dialogue box</figcaption></figure>
+        <figure><div class="shot">[DIALOGUE UI V2]</div><figcaption><b>02</b>Visual-novel redesign</figcaption></figure>
+        <figure><div class="shot">[SLIME STATE DIAGRAM]</div><figcaption><b>03</b>Slime state machine</figcaption></figure>
+        <figure><div class="shot">[STORY STRUCTURE]</div><figcaption><b>04</b>Three-act NPC plan</figcaption></figure>
+      </div>
+<pre class="code"><span class="c">// Stream the reply token by token so the NPC starts "talking" instantly</span>
+var request = new { model = "qwen2.5:3b", prompt, stream = true,
+                    options = new { num_predict = 120 } };
+await foreach (var token in ollama.StreamAsync(request))
+    dialogueBox.Append(token);</pre>
+      <div class="pager">
+        <a href="rolly-world.html">← PREV: ROLLY WORLD</a>
+        <a href="sylvaris.html">NEXT: SYLVARIS →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="wrap">
+    <div class="footer-cta">LET'S BUILD<br><span>SOMETHING.</span></div>
+    <a href="mailto:sufyaan.albertus040@gmail.com">sufyaan.albertus040@gmail.com</a>
+    <p class="copyright">© <span id="year">2026</span> Sufyaan Albertus</p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
