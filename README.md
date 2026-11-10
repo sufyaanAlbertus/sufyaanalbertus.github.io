@@ -6,9 +6,9 @@ A plain HTML/CSS site. There's no build step and nothing to install, so it can b
 portfolio/
 ├── index.html               ← home page
 ├── projects/
-│   ├── rolly-world.html     ← project pages (items a–h)
+│   ├── buzz-together.html   ← project pages (items a–h)
 │   ├── whisper-village.html
-│   └── sylvaris.html
+│   └── last-watch.html
 ├── css/style.css            ← all styling (colours at the top)
 ├── js/main.js               ← mobile menu
 └── assets/                  ← your images, CV, video thumbnails
@@ -32,12 +32,12 @@ Search each file for `[` and `YOUR-` to find every placeholder.
 
 ### Adding images
 1. Save each image as **.webp**, max **1600 px wide**, under **300 KB**. Free tool: https://squoosh.app
-2. Put the images in `assets/<game>/` (for example `assets/rolly-world/cover.webp`).
+2. Put the images in `assets/<game>/` (for example `assets/buzz-together/cover.webp`).
 3. In the HTML, replace the commented placeholder with the image. For example:
    - On the home page card:
-     `<img src="assets/rolly-world/cover.webp" alt=""><div class="art-overlay"></div>`
+     `<img src="assets/buzz-together/cover.webp" alt=""><div class="art-overlay"></div>`
    - In the process section:
-     `<div class="shot"><img src="../assets/rolly-world/graybox.webp" alt="Graybox level in Unity"></div>`
+     `<div class="shot"><img src="../assets/buzz-together/graybox.webp" alt="Graybox level in Unity"></div>`
 
 ### Test locally
 Double-click `index.html` to open it in your browser.
@@ -99,3 +99,17 @@ The brief only *requires* a bespoke domain if you use Wix. A custom domain such 
 - [ ] Add the site URL to your LinkedIn (Contact info → Website) and your business cards.
 - [ ] Spell-check every page (paste the text into Word or Grammarly).
 - [ ] Turn off the laptop's sleep timer for the exhibition, and open the site fullscreen with F11.
+
+---
+
+## Your links (already wired into the site)
+
+| Game | YouTube | itch.io |
+|---|---|---|
+| Buzz Together | https://youtu.be/Wa3_inxNxXE | https://sufyaan-albertus.itch.io/buzz-together |
+| Whisper Village | https://youtu.be/ArffidCrWk4 | https://sufyaan-albertus.itch.io/whisper-village |
+| Last Watch | https://youtu.be/nda8C_ZiPSg | https://sufyaan-albertus.itch.io/last-watch |
+
+- The site, the QR codes and the business card all point to **https://sufyaanalbertus.github.io**. Your GitHub repository must be named exactly `sufyaanalbertus.github.io` for that to work.
+- Keep the YouTube videos **Public** or **Unlisted** (not Private), or the embeds and QR codes won't play.
+- Keep the itch.io pages **Public**.

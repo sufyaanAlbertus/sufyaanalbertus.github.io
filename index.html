@@ -3,95 +3,138 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sufyaan Albertus | Gameplay &amp; Technical Programmer</title>
-  <meta name="description" content="Portfolio of Sufyaan Albertus, a gameplay and technical programmer working in Unity and Unreal Engine. IIE Vega School, Game Design &amp; Development.">
-  <!-- Social share preview (add assets/og-image.jpg, 1200x630) -->
-  <meta property="og:title" content="Sufyaan Albertus | Gameplay &amp; Technical Programmer">
-  <meta property="og:description" content="Game systems, AI and engine code in Unity and Unreal.">
-  <meta property="og:image" content="assets/og-image.jpg">
+  <title>Sufyaan Albertus | Game Designer &amp; Developer</title>
+  <meta name="description" content="Sufyaan Albertus designs games people want to play and builds the software that runs them. Unity, Unreal Engine 5, C++ and C#.">
+  <meta property="og:title" content="Sufyaan Albertus | Game Designer &amp; Developer">
+  <meta property="og:description" content="Press start. Games designed to hook you, built to run.">
+  <meta property="og:image" content="https://sufyaanalbertus.github.io/assets/og-image.jpg">
+  <meta property="og:url" content="https://sufyaanalbertus.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23000'/%3E%3Ctext x='16' y='22' font-size='16' text-anchor='middle' fill='%23E8C65F' font-family='sans-serif' font-weight='900'%3ES%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Exo+2:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Exo+2:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Press+Start+2P&display=swap">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="home">
+
+<div class="boot" id="boot" aria-hidden="true">
+  <div class="boot-inner">
+    <div class="boot-logo gold-text">S//A</div>
+    <div class="boot-label">LOADING NEW GAME</div>
+    <div class="boot-bar"><span></span></div>
+    <div class="boot-start">PRESS ANY KEY</div>
+  </div>
+</div>
+
+<a class="skip" href="#work">Skip to games</a>
 
 <header class="site-header">
   <div class="wrap">
     <a class="logo" href="index.html" aria-label="Sufyaan Albertus, home">S//A</a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav">MENU</button>
     <nav class="nav" id="nav">
-      <a href="#work">WORK</a>
-      <a href="#about">ABOUT</a>
-      <a href="#contact">CONTACT</a>
-      <!-- Put your CV in assets/ with this exact name -->
+      <a href="#work">GAMES</a>
+      <a href="#watch">WATCH</a>
+      <a href="#powers">POWER-UPS</a>
+      <a href="#about">PLAYER</a>
+      <a href="#contact">CO-OP</a>
       <a href="assets/Sufyaan-Albertus-CV.pdf" target="_blank" rel="noopener">CV ↓</a>
+      <button class="sfx-toggle" type="button" aria-pressed="false" title="Turn sound effects on or off">SFX: OFF</button>
     </nav>
   </div>
 </header>
 
 <main>
+  <!-- TITLE SCREEN -->
   <section class="hero">
     <div class="wrap">
       <div class="hero-main">
-        <div class="status label"><span class="status-dot" aria-hidden="true"></span>Available for junior roles</div>
+        <div class="status label"><span class="status-dot" aria-hidden="true"></span>PLAYER 1 · READY · AVAILABLE FOR HIRE</div>
         <h1 class="gold-text">SUFYAAN<br>ALBERTUS</h1>
-        <div class="role">Gameplay &amp; Technical Programmer</div>
-        <p class="intro">I build the systems that make games feel alive: AI, tools and engine code in Unity and Unreal. Final-year Game Design &amp; Development student at the IIE Vega School.</p>
+        <div class="role">Game Designer · Game &amp; Software Developer</div>
+        <p class="intro">I design games that grab you in the first minute, and I write the code that makes them run. A bee swarm racing the sunset. Villagers who talk back with live AI. A beach you'll never stop defending. <strong>Pick a level.</strong></p>
         <div class="hero-actions">
-          <a class="btn btn-gold" href="#work">VIEW PROJECTS</a>
-          <a class="btn btn-line" href="#contact">GET IN TOUCH</a>
+          <a class="btn btn-gold press-start" href="#work">▶ PRESS START</a>
+          <a class="btn btn-line" href="#contact">HIRE ME</a>
         </div>
       </div>
-      <div class="stats" aria-label="Quick facts">
-        <div class="stat"><b>3</b><span>featured games</span></div>
-        <div class="stat"><b>2</b><span>engines: Unity, UE5</span></div>
-        <div class="stat"><b>20+</b><span>C# scripts on one project</span></div>
-        <div class="stat"><b>LEAD</b><span>technical lead role</span></div>
-      </div>
+
+      <aside class="char-card" aria-label="Player card">
+        <div class="char-portrait">
+          <img src="assets/headshot.jpg" alt="Sufyaan Albertus" width="640" height="800">
+          <span class="char-badge">P1</span>
+        </div>
+        <dl class="char-stats">
+          <div><dt>CLASS</dt><dd>Designer / Developer</dd></div>
+          <div><dt>SPECIALTY</dt><dd>Gameplay · AI · UI</dd></div>
+          <div><dt>BASE</dt><dd>Johannesburg, ZA</dd></div>
+          <div><dt>STATUS</dt><dd class="online">● Open to work</dd></div>
+        </dl>
+        <div class="char-progress">
+          <span class="label">LEVELS CLEARED</span>
+          <span class="cleared-count">0 / 3</span>
+          <div class="xp"><span class="xp-fill"></span></div>
+          <small>Play all three to hit 100%.</small>
+        </div>
+      </aside>
     </div>
   </section>
 
+  <!-- SKILL TICKER -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>UNREAL ENGINE 5</span><b>◆</b><span>UNITY</span><b>◆</b><span>C++</span><b>◆</b><span>C#</span><b>◆</b><span>GAME DESIGN</span><b>◆</b><span>GAME AI</span><b>◆</b><span>LLM NPCs</span><b>◆</b><span>SLATE UI</span><b>◆</b><span>PROCEDURAL AUDIO</span><b>◆</b><span>SOFTWARE DEVELOPMENT</span><b>◆</b><span>3D MODELLING</span><b>◆</b><span>NEXT.JS</span><b>◆</b><span>TAILWIND CSS</span><b>◆</b>
+      <span>UNREAL ENGINE 5</span><b>◆</b><span>UNITY</span><b>◆</b><span>C++</span><b>◆</b><span>C#</span><b>◆</b><span>GAME DESIGN</span><b>◆</b><span>GAME AI</span><b>◆</b><span>LLM NPCs</span><b>◆</b><span>SLATE UI</span><b>◆</b><span>PROCEDURAL AUDIO</span><b>◆</b><span>SOFTWARE DEVELOPMENT</span><b>◆</b><span>3D MODELLING</span><b>◆</b><span>NEXT.JS</span><b>◆</b><span>TAILWIND CSS</span><b>◆</b>
+    </div>
+  </div>
+
+  <!-- GAMES -->
   <section class="section" id="work">
     <div class="wrap">
-      <div class="section-head"><span class="label">Selected work</span></div>
-      <div class="cards">
+      <div class="section-head"><span class="label">▶ Select your level</span></div>
+      <h2 class="big-h2">Three games. <span class="gold-text">Zero filler.</span></h2>
+      <div class="cards cards-featured">
 
-        <a class="card" href="projects/rolly-world.html">
+        <a class="card card-hero" href="projects/buzz-together.html" data-level="buzz-together">
           <div class="art">
-            <!-- Replace with: <img src="assets/rolly-world/cover.webp" alt=""><div class="art-overlay"></div> -->
-            <div class="art-top"><span>UNITY · C#</span><span>01</span></div>
-            <div class="art-title">ROLLY<br>WORLD</div>
+            <img src="assets/buzz-together/cover.webp" alt="" width="1600" height="900"><div class="art-overlay"></div>
+            <div class="art-top"><span>LEVEL 01 · FEATURED</span><span class="cleared-badge">✓ CLEARED</span></div>
+            <div class="art-title">BUZZ<br>TOGETHER</div>
           </div>
           <div class="card-body">
-            <span class="label" style="font-size:0.7rem">3D platformer · Technical Lead</span>
-            <p>Boss AI on a waypoint graph, an SFX manager, async loading and respawn systems.</p>
-            <span class="card-more">View case study →</span>
+            <div class="card-meta"><span>GAME JAM</span><span>UNREAL 5 · C++</span></div>
+            <p class="hook">One bee. One sunset. One swarm that grows with every trip home.</p>
+            <p>A weekend game-jam build where every model, menu, track and sound effect is generated in code. No store-bought assets.</p>
+            <span class="card-more">PLAY LEVEL ▶</span>
           </div>
         </a>
 
-        <a class="card" href="projects/whisper-village.html">
+        <a class="card" href="projects/whisper-village.html" data-level="whisper-village">
           <div class="art">
-            <div class="art-top"><span>UNITY · OLLAMA</span><span>02</span></div>
+            <img src="assets/whisper-village/card.webp" alt="" width="1600" height="900"><div class="art-overlay"></div>
+            <div class="art-top"><span>LEVEL 02</span><span class="cleared-badge">✓ CLEARED</span></div>
             <div class="art-title">WHISPER<br>VILLAGE</div>
           </div>
           <div class="card-body">
-            <span class="label" style="font-size:0.7rem">2D RPG · AI &amp; systems</span>
-            <p>Villagers that talk back, streamed in real time from a local language model.</p>
-            <span class="card-more">View case study →</span>
+            <div class="card-meta"><span>2D RPG</span><span>UNITY · AI</span></div>
+            <p class="hook">The villagers talk back. Live.</p>
+            <p>AI-powered conversations that never play out the same way twice.</p>
+            <span class="card-more">PLAY LEVEL ▶</span>
           </div>
         </a>
 
-        <a class="card" href="projects/sylvaris.html">
+        <a class="card" href="projects/last-watch.html" data-level="last-watch">
           <div class="art">
-            <div class="art-top"><span>UNREAL 5 · C++</span><span>03</span></div>
-            <div class="art-title">SYLVARIS</div>
+            <img src="assets/last-watch/cover.webp" alt="" width="1600" height="900"><div class="art-overlay"></div>
+            <div class="art-top"><span>LEVEL 03</span><span class="cleared-badge">✓ CLEARED</span></div>
+            <div class="art-title">LAST<br>WATCH</div>
           </div>
           <div class="card-body">
-            <span class="label" style="font-size:0.7rem">3D tower defence · Unreal C++</span>
-            <p>Prototyped in HTML5 Canvas, then rebuilt in Unreal Engine 5 using pure C++.</p>
-            <span class="card-more">View case study →</span>
+            <div class="card-meta"><span>SURVIVAL</span><span>ISOMETRIC 3D</span></div>
+            <p class="hook">Hold the beach. Guard the gold.</p>
+            <p>Endless skeleton waves and a treasure pile you'll never get to spend.</p>
+            <span class="card-more">PLAY LEVEL ▶</span>
           </div>
         </a>
 
@@ -99,39 +142,109 @@
     </div>
   </section>
 
+  <!-- NOW PLAYING -->
+  <section class="section" id="watch">
+    <div class="wrap">
+      <div class="section-head"><span class="label">▶ Now playing</span></div>
+      <h2 class="big-h2">Watch it. <span class="gold-text">Then play it.</span></h2>
+      <div class="reels">
+        <div class="reel">
+          <a class="reel-thumb" href="https://youtu.be/Wa3_inxNxXE" target="_blank" rel="noopener" aria-label="Watch Buzz Together on YouTube"><img src="assets/buzz-together/yt-thumb.webp" alt="" width="960" height="540" loading="lazy"><span class="reel-play" aria-hidden="true">▶</span></a>
+          <b>BUZZ TOGETHER</b>
+          <div class="reel-links"><a href="https://youtu.be/Wa3_inxNxXE" target="_blank" rel="noopener">▶ YOUTUBE</a><a href="https://sufyaan-albertus.itch.io/buzz-together" target="_blank" rel="noopener">PLAY ON ITCH.IO ↗</a><a href="projects/buzz-together.html">LEVEL PAGE →</a></div>
+        </div>
+        <div class="reel">
+          <a class="reel-thumb" href="https://youtu.be/ArffidCrWk4" target="_blank" rel="noopener" aria-label="Watch Whisper Village on YouTube"><img src="assets/whisper-village/yt-thumb.webp" alt="" width="960" height="540" loading="lazy"><span class="reel-play" aria-hidden="true">▶</span></a>
+          <b>WHISPER VILLAGE</b>
+          <div class="reel-links"><a href="https://youtu.be/ArffidCrWk4" target="_blank" rel="noopener">▶ YOUTUBE</a><a href="https://sufyaan-albertus.itch.io/whisper-village" target="_blank" rel="noopener">PLAY ON ITCH.IO ↗</a><a href="projects/whisper-village.html">LEVEL PAGE →</a></div>
+        </div>
+        <div class="reel">
+          <a class="reel-thumb" href="https://youtu.be/nda8C_ZiPSg" target="_blank" rel="noopener" aria-label="Watch Last Watch on YouTube"><img src="assets/last-watch/yt-thumb.webp" alt="" width="960" height="540" loading="lazy"><span class="reel-play" aria-hidden="true">▶</span></a>
+          <b>LAST WATCH</b>
+          <div class="reel-links"><a href="https://youtu.be/nda8C_ZiPSg" target="_blank" rel="noopener">▶ YOUTUBE</a><a href="https://sufyaan-albertus.itch.io/last-watch" target="_blank" rel="noopener">PLAY ON ITCH.IO ↗</a><a href="projects/last-watch.html">LEVEL PAGE →</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POWER-UPS -->
+  <section class="section" id="powers">
+    <div class="wrap">
+      <div class="section-head"><span class="label">Power-ups I bring</span></div>
+      <div class="powers">
+        <div class="power">
+          <span class="power-icon" aria-hidden="true">✦</span>
+          <h3>DESIGN</h3>
+          <p>Core loops that hook players fast and give them a reason to hit “one more round”.</p>
+        </div>
+        <div class="power">
+          <span class="power-icon" aria-hidden="true">⌘</span>
+          <h3>DEVELOP</h3>
+          <p>Clean gameplay code in C++ and C#, from enemy AI to UI built from scratch.</p>
+        </div>
+        <div class="power">
+          <span class="power-icon" aria-hidden="true">◈</span>
+          <h3>INNOVATE</h3>
+          <p>New tech in play, like live AI dialogue and music generated entirely in code.</p>
+        </div>
+        <div class="power">
+          <span class="power-icon" aria-hidden="true">▲</span>
+          <h3>SHIP</h3>
+          <p>Finished, playable builds, even with a single weekend on the clock.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLAYER PROFILE -->
   <section class="section" id="about">
     <div class="wrap about">
       <div class="about-text">
-        <div class="section-head"><span class="label">About</span></div>
-        <p class="lead">I'm usually the one who glues a team's game together: setting up the project, writing the core systems, and fixing whatever breaks the night before hand-in.</p>
-        <p>I enjoy turning a design document into something that actually runs. I'm based in Johannesburg and open to remote or on-site junior gameplay and tools programming roles.</p>
+        <div class="section-head"><span class="label">Player profile</span></div>
+        <p class="lead">I love owning an idea from the first sketch to the final build: the loop, the systems, the UI, even the sound.</p>
+        <p>I've led the tech on team projects and built full games on my own. If it needs to be fun and it needs to work, that's my kind of quest. Based in Johannesburg and ready to join a studio or team that builds things people love to play.</p>
       </div>
       <div class="toolkit">
-        <span class="label">Toolkit</span>
-        <ul class="chips">
-          <li>C#</li><li>C++</li><li>UNITY</li><li>UNREAL 5</li><li>GAME AI</li><li>OLLAMA / LLMS</li><li>GIT</li><li>UX / HCI</li>
+        <span class="label">Inventory</span>
+        <ul class="inventory">
+          <li><b>C++</b><span>language</span></li>
+          <li><b>C#</b><span>language</span></li>
+          <li><b>UE5</b><span>engine</span></li>
+          <li><b>UNITY</b><span>engine</span></li>
+          <li><b>SLATE</b><span>UI</span></li>
+          <li><b>AI</b><span>AI integration</span></li>
+          <li><b>AUDIO</b><span>procedural</span></li>
+          <li><b>LLM</b><span>live NPCs</span></li>
+          <li><b>GIT</b><span>version control</span></li>
+          <li><b>3D</b><span>modelling for adverts</span></li>
+          <li><b>NEXT.JS</b><span>web development</span></li>
+          <li><b>TAILWIND</b><span>CSS styling</span></li>
         </ul>
       </div>
     </div>
   </section>
 </main>
 
+<!-- CONTINUE SCREEN -->
 <footer class="site-footer" id="contact">
   <div class="wrap">
-    <div style="display:flex;flex-direction:column;gap:12px">
-      <div class="footer-cta">LET'S BUILD<br><span>SOMETHING.</span></div>
-      <a href="mailto:sufyaan.albertus040@gmail.com">sufyaan.albertus040@gmail.com</a>
+    <div class="continue">
+      <div class="label">READY FOR PLAYER 2?</div>
+      <div class="footer-cta">LET'S BUILD YOUR<br><span>NEXT GAME.</span></div>
+      <p class="footer-sub">Studios, teams and collaborators: send an invite and let's talk.</p>
+      <a class="btn btn-gold mail-link" href="mailto:sufyaan.albertus040@gmail.com">✉ SEND INVITE</a>
+      <a class="mail-text" href="mailto:sufyaan.albertus040@gmail.com">sufyaan.albertus040@gmail.com</a>
     </div>
     <div class="footer-links">
-      <!-- Replace # with your real profile links -->
-      <a href="https://www.linkedin.com/in/YOUR-HANDLE" target="_blank" rel="noopener">LINKEDIN</a>
-      <a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GITHUB</a>
-      <a href="https://YOUR-USERNAME.itch.io" target="_blank" rel="noopener">ITCH.IO</a>
+      <a href="https://www.linkedin.com/in/sufyaan-albertus" target="_blank" rel="noopener">LINKEDIN</a>
+      <a href="https://sufyaan-albertus.itch.io" target="_blank" rel="noopener">ITCH.IO</a>
+      <a href="https://github.com/sufyaanalbertus" target="_blank" rel="noopener">GITHUB</a>
     </div>
-    <p class="copyright">© <span id="year">2026</span> Sufyaan Albertus · IIE Vega School</p>
+    <p class="copyright">© <span id="year">2026</span> Sufyaan Albertus · All rights reserved · <span class="hint">Psst… try ↑↑↓↓←→←→BA</span></p>
   </div>
 </footer>
 
+<div class="toasts" aria-live="polite"></div>
 <script src="js/main.js"></script>
 </body>
 </html>
